@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>JavaScript</title>
+    <script src="node_modules/traceur/bin/traceur.js"></script>
+    <script src="node_modules/es6-module-loader/dist/es6-module-loader-dev.js"></script>
+</head>
+
+<body>
+    <h1>Todo App</h1>
+
+    <h3 class="cartTitle h1" id="title"> Js Fundamentals</h2>
+
+        <ul id="task-list">
+            <li class="task">Options 1</li>
+            <li class="task">Options 2</li>
+            <li class="task">Options 3</li>
+        </ul>
+
+        <script>
+            //System.import('src/object.js');
+            let sonuc;
+
+            sonuc = document.getElementsByClassName("task")[0];
+            sonuc = document.getElementsByClassName("task")[1];
+
+            taskList = document.getElementsByClassName("task");
+
+            for (task of taskList) {
+                task.style.color = "blue";
+            }
+        </script>
+</body>
+
+</html>
