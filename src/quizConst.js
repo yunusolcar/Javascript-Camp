@@ -31,9 +31,9 @@ Quiz.prototype.getQuestion = function () {
 const quiz = new Quiz(allQuestion);
 
 
-document.querySelector(".btn-start").addEventListener("click", function () {
+document.querySelector(".btn_start").addEventListener("click", function () {
     if (quiz.allQuestion.length != quiz.questionIndex) { //dizi içerisindeki eleman sayısına eşit olana kadar devam edip sonunda durur
-
+document.querySelector(".quiz_box").classList.add("active")
         console.log(quiz.getQuestion());
         quiz.questionIndex += 1;
     } else {
