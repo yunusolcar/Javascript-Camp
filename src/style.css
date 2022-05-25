@@ -9,16 +9,16 @@
 .quiz_box.active {
     opacity: 1;
     pointer-events: auto;
-    transform: translate(-50%, -50%) scale(1); 
+    transform: translate(-50%, -50%) scale(1);
 
 }
 
 .quiz_box {
     width: 550px;
+    transform: translate(-50%, -50%) scale(0.7);
+    transition: all 0.3s ease;
     opacity: 0;
     pointer-events: none;
-    transform: translate(-50%, -50%) scale(0.7); 
-    transition: all 0.3s ease;
 }
 
 .quiz_box header .title {
@@ -39,7 +39,7 @@
     border: 1px solid #151D3B;
     border-radius: 5px;
     padding: 8px 15px;
-    font-size: 18;
+    font-size: 18px;
     margin-bottom: 10px;
     cursor: pointer;
     /*mouse imleci el işareti olur */
@@ -61,4 +61,22 @@
 .quiz_box .option_list .option.incorrect {
     color: #721c24;
     background: #f8d7da;
+}
+
+.quiz_box .option_list .option.disabled {
+    pointer-events: none;
+}
+
+.quiz_box .next_btn {
+    opacity: 0;
+    pointer-events: none;
+
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+}
+
+.quiz_box .next_btn.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
 }
