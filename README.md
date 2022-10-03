@@ -1,2 +1,2 @@
-# advancedJavaScript
-Starter kit for my JS Courses
+HarvardX CS50W
+CS50's Web Programming with JavaScript
